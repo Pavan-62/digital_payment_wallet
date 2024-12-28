@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastPay - Login</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <style>
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 1em;
+        }
+        .nav-container .app-name {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #ff6347; /* Tomato color */
+        }
+        .nav-container a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 1em;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-container">
+        <span class="app-name">FastPay</span>
+        <a href="/">Home</a>
+    </nav>
+    <h1 style="text-align: center;">Login</h1>
+        <form action="/login" method="POST">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+</body>
+</html>
